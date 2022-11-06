@@ -52,6 +52,13 @@ function draw() {
     }
 }
 
+function play(){
+    song.play();
+    song.setVolume(1);
+    song.rate(1);
+    
+}
+
 function gotPoses(results){
     if(results.length>0){
         rightWristX = results[0].pose.rightWrist.x;
